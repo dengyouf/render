@@ -11,7 +11,7 @@ RUN apt-get update && \
 RUN echo 'root:dengyoufpass123' | chpasswd
 
 # 暴露 22 端口
-EXPOSE 22
+EXPOSE 22422
 
 # 启动 Shellinabox
 CMD ["/usr/bin/shellinaboxd", "-t", "-s", "/:LOGIN"]
